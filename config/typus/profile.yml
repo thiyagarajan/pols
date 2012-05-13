@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Profile:
+  fields:
+    default: user_id, first_name, last_name, address1, address2, city, state, zip, phone, website, avatar_file_name, avatar_file_size
+    form: user_id, first_name, last_name, address1, address2, city, state, zip, phone, website, avatar_file_name, avatar_file_size
+  relationships: 
+  application: Application

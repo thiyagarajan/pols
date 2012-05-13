@@ -1,0 +1,31 @@
+<h2>Sign up</h2>
+
+<% resource.build_profile %>
+
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="inputs">
+      <%= f.input :email, :required => true, :autofocus => true %>
+      <%= f.input :password, :required => true %>
+      <%= f.input :password_confirmation, :required => true %>
+
+      <%= f.fields_for :profile do |profile_form| %>
+          <%= profile_form.input :first_name, :required => true %>
+          <%= profile_form.input :last_name %>
+          <%= profile_form.input :address1 %>
+          <%= profile_form.input :address2 %>
+          <%= profile_form.input :city %>
+          <%= profile_form.input :state %>
+          <%= profile_form.input :zip %>
+          <%= profile_form.input :phone %>
+          <%= profile_form.input :website %>
+      <% end %>
+
+    </div>
+    <div class="actions">
+      <%= f.button :submit, "Sign up" %>
+    </div>
+<% end %>
+
+<%= render "links" %>

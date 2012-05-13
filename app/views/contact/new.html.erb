@@ -1,0 +1,30 @@
+<div class="page-header">
+  <h2>Contact Us</h2>
+</div>
+<%= form_for @contact, :url => contact_path do |form| %>
+    <div class="inputs">
+      <fieldset class="fields">
+        <div class="field">
+          <%= form.label :name %>
+          <%= form.text_field :name, :autofocus => true %>
+        </div>
+
+        <div class="field">
+          <%= form.label :email %>
+          <%= form.text_field :email %>
+        </div>
+        <div class="field">
+          <%= form.label :subject %>
+          <%= form.text_field :subject %>
+        </div>
+
+        <div class="field">
+          <%= form.label :body %>
+          <%= form.text_area :body, :rows => "5" %>
+        </div>
+      </fieldset>
+    </div>
+    <div class="actions">
+      <%= form.submit "Send" %>
+    </div>
+<% end %>

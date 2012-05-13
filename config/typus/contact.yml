@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Contact:
+  fields:
+    default: name, email, subject, body
+    form: name, email, subject, body
+  relationships: 
+  application: Application

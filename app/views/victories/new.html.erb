@@ -1,0 +1,26 @@
+<div class="page-header">
+  <h1>Add Victory</h1>
+</div>
+<%= form_for @victory, :url => victories_path, :html => {} do |form| %>
+    <div class="inputs">
+      <fieldset class="fields">
+        <div class="field">
+          <%= form.label :title %>
+          <%= form.text_field :title, :autofocus => true %>
+        </div>
+
+        <div class="field">
+          <%= form.label :problem %>
+          <%= form.text_area :problem, :rows => "5" %>
+        </div>
+
+        <div class="field">
+          <%= form.label :solution %>
+          <%= form.text_area :solution, :rows => "5" %>
+        </div>
+      </fieldset>
+    </div>
+    <div class="actions">
+      <%= form.submit "Add Victory" %>
+    </div>
+<% end %>

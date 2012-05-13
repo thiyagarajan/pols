@@ -1,0 +1,42 @@
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:method => :put, :multipart => true}) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="inputs">
+      <%= f.input :email, :required => true, :autofocus => true %>
+      <%= f.input :password, :autocomplete => "off", :hint => "leave it blank if you don't want to change it", :required => false %>
+      <%= f.input :password_confirmation, :required => false %>
+      <%= f.input :current_password, :hint => "we need your current password to confirm your changes", :required => true %>
+    </div>
+
+    <%= f.fields_for :profile do |profile_form| %>
+        <%= profile_form.input :first_name, :required => true %>
+        <%= profile_form.input :last_name %>
+        <%= profile_form.input :address1 %>
+        <%= profile_form.input :address2 %>
+        <%= profile_form.input :city %>
+        <%= profile_form.input :state %>
+        <%= profile_form.input :zip %>
+        <%= profile_form.input :phone %>
+        <%= profile_form.input :website %>
+        <div class="control-group string optional">
+          <label class="string optional control-label" for="user_profile_attributes_website">Avatar</label>
+
+          <div class="controls"><%= profile_form.file_field :avatar %>
+          </div>
+        </div>
+
+    <% end %>
+
+    <div class="actions">
+      <%= f.button :submit, "Update" %>
+    </div>
+<% end %>
+
+<h3>Cancel my account</h3>
+
+<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>
+  .</p>
+
+<%= link_to "Back", :back %>

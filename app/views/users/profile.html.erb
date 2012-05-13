@@ -1,0 +1,89 @@
+<div class="page-header">
+  <h1><h1><%= current_user.profile.first_name %>'s Profile</h1></h1>
+</div>
+
+<%#= image_tag @user.avatar.url(:medium) %>
+
+<div class="form-horizontal">
+
+  <div class="control-group">
+    <label class="control-label">First Name</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.first_name %>
+    </div>
+  </div>
+
+
+  <div class="control-group">
+    <label class="control-label">Last Name</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.last_name %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Email</label>
+
+    <div class="controls profileshow">
+      <%= @user.email %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Address1</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.address1 %>
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label">Address2</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.address2 %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">City</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.city %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">State</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.state %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Zip</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.zip %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Phone</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.phone %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Website</label>
+
+    <div class="controls profileshow">
+      <%= @user.profile.website %>
+    </div>
+  </div>
+
+</div>

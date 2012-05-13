@@ -1,0 +1,17 @@
+<div class="page-header">
+  <h2>Victory List</h2>
+</div>
+<table>
+  <tr>
+    <th>Vitory ID</th>
+    <th>Title</th>
+    <th>Posted By</th>
+  </tr>
+  <% @victory.each do |victory| %>
+      <tr>
+        <td><%= victory.id %></td>
+        <td><%= link_to victory.title, "/victories/#{victory.id}" %></td>
+        <td><%= Profile.find_by_user_id(victory.user_id).first_name %></td>
+      </tr>
+  <% end %>
+</table>
