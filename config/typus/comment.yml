@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Comment:
+  fields:
+    default: commentable_id, title, body, subject, user_id, parent_id, lft, rgt
+    form: commentable_id, title, body, subject, user_id, parent_id, lft, rgt
+  relationships: children
+  application: Application
