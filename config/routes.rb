@@ -27,6 +27,8 @@ Pols::Application.routes.draw do
   devise_for :users, :controllers => {:passwords => "passwords"} do
   end
 
+  devise_for :users, :controllers => { :invitations => 'users/invitations' }
+
   resources :passwords
 
   resources :comments
