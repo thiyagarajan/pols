@@ -17,6 +17,7 @@ gem 'acts-as-taggable-on', '~> 2.2.2'
 gem 'acts_as_commentable_with_threading'
 gem 'awesome_nested_set'
 gem 'devise_invitable', '~> 1.0.0'
+gem 'refinerycms-blog', '~> 2.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
