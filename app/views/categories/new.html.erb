@@ -1,0 +1,29 @@
+<div class="page-header">
+  <h1>New category</h1>
+</div>
+
+<% form_for(@category) do |f| %>
+    <%= f.error_messages %>
+
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :parent_id %><br />
+      <%= f.select :parent_id, nested_set_options(Category, @category) {|i| "#{'-' * i.level} #{i.name}" } %>
+    </p>
+    <p>
+      <%= f.label :lft %><br />
+      <%= f.text_field :lft %>
+    </p>
+    <p>
+      <%= f.label :rgt %><br />
+      <%= f.text_field :rgt %>
+    </p>
+    <p>
+      <%= f.submit 'Create' %>
+    </p>
+<% end %>
+
+<%= link_to 'Back', categories_path %>

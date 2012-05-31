@@ -1,6 +1,15 @@
 Pols::Application.routes.draw do
 
-  get "comments/new"
+  #get "categories/index"
+  #
+  #get "categories/new"
+  #
+  #get "categories/edit"
+  #
+  #get "categories/show"
+  #
+  #get "comments/new"
+  resources :categories
 
   match 'victory_comments' => 'victories#new', :via => :post
   match 'victories' => 'victories#new', :as => 'victories', :via => :get
