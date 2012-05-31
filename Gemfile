@@ -22,7 +22,7 @@ gem 'devise_invitable', '~> 1.0.0'
 #gem 'exception_notification'
 #gem 'lazy_high_charts'
 gem 'sunspot_rails'
-#gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
+gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
 
 # Gems used only for assets and not required
 # in production environments by default.
