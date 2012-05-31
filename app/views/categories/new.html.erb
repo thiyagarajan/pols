@@ -2,7 +2,7 @@
   <h1>New category</h1>
 </div>
 
-<% form_for(@category) do |f| %>
+<%= form_for @category, :url => categories_path, :html => {} do |f| %>
     <% @category.errors.full_messages.each do |msg| %>
         <p><%= msg %></p>
     <% end %>
