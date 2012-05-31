@@ -1,6 +1,11 @@
 <div class="page-header">
   <h2>Victory List</h2>
 </div>
+<div id="container">
+  <%# @victoryown.each do |own| %>
+  <%=  @victoryown.inspect %>
+  <%# end %>
+</div>
 <table>
   <tr>
     <th>Vitory ID</th>
@@ -14,5 +19,6 @@
         <td><%= Profile.find_by_user_id(victory.user_id).first_name %></td>
       </tr>
   <% end %>
-  <%= will_paginate @victory %>
 </table>
+
+<%= will_paginate @victory %>

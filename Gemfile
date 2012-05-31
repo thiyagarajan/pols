@@ -17,7 +17,12 @@ gem 'acts-as-taggable-on', '~> 2.2.2'
 gem 'acts_as_commentable_with_threading'
 gem 'awesome_nested_set'
 gem 'devise_invitable', '~> 1.0.0'
-gem 'refinerycms-blog', '~> 2.0.0'
+#gem 'refinerycms-blog', '~> 2.0.0'
+#gem 'thinking-sphinx', :git => 'http://github.com/freelancing-god/thinking-sphinx.git', :require => 'thinking_sphinx'
+#gem 'exception_notification'
+#gem 'lazy_high_charts'
+gem 'sunspot_rails'
+#gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
 
 # Gems used only for assets and not required
 # in production environments by default.
