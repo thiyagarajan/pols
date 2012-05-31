@@ -3,7 +3,9 @@
 </div>
 
 <% form_for(@category) do |f| %>
-    <%= f.error_messages %>
+    <% @category.errors.full_messages.each do |msg| %>
+        <p><%= msg %></p>
+    <% end %>
 
     <p>
       <%= f.label :name %><br />
