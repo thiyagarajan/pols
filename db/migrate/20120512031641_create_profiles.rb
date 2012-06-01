@@ -11,6 +11,7 @@ class CreateProfiles < ActiveRecord::Migration
       t.string :zip
       t.string :phone
       t.string :website
+      t.string :slug
       t.timestamps
     end
   end
