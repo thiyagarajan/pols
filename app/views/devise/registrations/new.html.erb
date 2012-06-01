@@ -21,9 +21,13 @@
           <%= profile_form.input :phone %>
           <%= profile_form.input :website %>
       <% end %>
+      <div class="control-group string optional">
+        <label class="string optional control-label" for="user_profile_attributes_website">Captcha</label>
 
-        <%= recaptcha_tags :display => {:theme => 'red' , :tabindex => '8' } %>
-
+        <div class="controls">
+          <%= recaptcha_tags :display => {:theme => 'red', :tabindex => '8'} %>
+        </div>
+      </div>
     </div>
     <div class="actions">
       <%= f.button :submit, "Sign up" %>
