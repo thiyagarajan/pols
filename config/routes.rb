@@ -10,6 +10,7 @@ Pols::Application.routes.draw do
   #
   #get "comments/new"
   resources :categories
+  resources :home
 
   match 'victory_comments' => 'victories#new', :via => :post
   match 'victories' => 'victories#new', :as => 'victories', :via => :get
