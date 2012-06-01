@@ -21,7 +21,9 @@
           <%= profile_form.input :phone %>
           <%= profile_form.input :website %>
       <% end %>
-        <%#= recaptcha_tags %>
+
+        <%= recaptcha_tags :display => {:theme => 'red' , :tabindex => '8' } %>
+
     </div>
     <div class="actions">
       <%= f.button :submit, "Sign up" %>
