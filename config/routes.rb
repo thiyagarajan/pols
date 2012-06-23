@@ -1,14 +1,6 @@
 Pols::Application.routes.draw do
 
-  #get "categories/index"
-  #
-  #get "categories/new"
-  #
-  #get "categories/edit"
-  #
-  #get "categories/show"
-  #
-  #get "comments/new"
+  devise_for :users
   resources :categories
   resources :home
 
@@ -39,12 +31,7 @@ Pols::Application.routes.draw do
     resources :profiles
   end
 
-  devise_for :users, :controllers => {:passwords => "passwords"} do
-  end
-
   devise_for :users, :controllers => { :invitations => 'users/invitations' }
-
-  #resources :passwords
 
   resources :comments
 
