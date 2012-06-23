@@ -3,8 +3,8 @@ class HomeController < ApplicationController
     @victory = Victory.all
     @victory = Victory.paginate(:page => params[:page], :per_page => 10)
     if user_signed_in?
-      @user = current_user
-      myvictory(@user)
+      user = current_user.id
+      myvictory(user)
       puts "===================="
       puts @myvictory.inspect
       puts "===================="
@@ -12,7 +12,7 @@ class HomeController < ApplicationController
   end
 
   def myvictory(user)
-    @myvictory = Victory.all
+    @myvictory = Victory.find(:all, :conditions => ["user_id=#{user}"])
   end
 
 end
