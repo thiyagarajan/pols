@@ -4,6 +4,9 @@ class HomeController < ApplicationController
     @victory = Victory.paginate(:page => params[:page], :per_page => 10)
     @user = current_user
     myvictory(@user)
+    puts "===================="
+    puts @myvictory.inspect
+    puts "===================="
   end
 
   def myvictory(user)
