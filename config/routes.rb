@@ -30,10 +30,10 @@ Pols::Application.routes.draw do
 
   get "users/myaccount"
 
-  #devise_for :users,
-  #           :controllers => { :registrations => "registrations" },
-  #           :path => "users",
-  #           :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
+  devise_for :users,
+             :controllers => { :registrations => "registrations" },
+             :path => "users",
+             :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
 
   devise_for :users do
     resources :profiles
@@ -44,7 +44,7 @@ Pols::Application.routes.draw do
 
   devise_for :users, :controllers => { :invitations => 'users/invitations' }
 
-  resources :passwords
+  #resources :passwords
 
   resources :comments
 

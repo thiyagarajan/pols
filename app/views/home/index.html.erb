@@ -1,21 +1,23 @@
 <div class="page-header">
   <h2>Victory List</h2>
 </div>
-<div id="container">
-  <h3>My Victories</h3>
-  <table>
-    <tr>
-      <th>Vitory ID</th>
-      <th>Title</th>
-    </tr>
-    <% @myvictory.each do |myvictory| %>
+<% if user_signed_in? %>
+    <div id="container">
+      <h3>My Victories</h3>
+      <table>
         <tr>
-          <td><%= myvictory.id %></td>
-          <td><%= link_to myvictory.title, "/victories/#{myvictory.id}" %></td>
+          <th>Vitory ID</th>
+          <th>Title</th>
         </tr>
-    <% end %>
-  </table>
-</div>
+        <% @myvictory.each do |myvictory| %>
+            <tr>
+              <td><%= myvictory.id %></td>
+              <td><%= link_to myvictory.title, "/victories/#{myvictory.id}" %></td>
+            </tr>
+        <% end %>
+      </table>
+    </div>
+<% end %>
 <br/>
 <br/>
 <br/>
