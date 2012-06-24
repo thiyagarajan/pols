@@ -5,14 +5,10 @@ class HomeController < ApplicationController
     if user_signed_in?
       user = current_user.id
       myvictory(user)
-      puts "===================="
-      puts @myvictory.inspect
-      puts "===================="
     end
   end
 
   def myvictory(user)
     @myvictory = Victory.find(:all, :conditions => ["user_id=#{user}"])
   end
-
 end
