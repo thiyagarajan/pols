@@ -1,6 +1,6 @@
 <div class="page-header">
-  <h1><%= @about.title %></h1>
+  <h1><%= @about.title unless @about.nil? %></h1>
 </div>
-<p><%= @about.body %></p>
+<p><%= @about.body unless @about.nil? %></p>
 
 

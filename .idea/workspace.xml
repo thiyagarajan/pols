@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8894bf14-d843-4e4c-9893-49f60c267f1f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sites_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sites_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sites/aboutus.html.erb" afterPath="$PROJECT_DIR$/app/views/sites/aboutus.html.erb" />
     </list>
     <ignored path="pols.iws" />
@@ -27,19 +24,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="aboutus.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="aboutus.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sites/aboutus.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="18" selection-start="82" selection-end="82" vertical-scroll-proportion="0.091561936">
+            <state line="6" column="38" selection-start="130" selection-end="130" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sites_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="sites_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+            <state line="5" column="29" selection-start="107" selection-end="107" vertical-scroll-proportion="0.1457976">
               <folding />
             </state>
           </provider>
@@ -72,8 +69,8 @@
         <option value="$PROJECT_DIR$/app/controllers/passwords_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sites_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/sites/aboutus.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/sites_controller.rb" />
       </list>
     </option>
   </component>
@@ -643,16 +640,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/sites/aboutus.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+        <state line="6" column="38" selection-start="130" selection-end="130" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/aboutus.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="82" selection-end="82" vertical-scroll-proportion="0.091561936">
+        <state line="5" column="29" selection-start="107" selection-end="107" vertical-scroll-proportion="0.1457976">
           <folding />
         </state>
       </provider>
