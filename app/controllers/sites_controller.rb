@@ -1,5 +1,6 @@
 class SitesController < ApplicationController
   def help
+    @help = Cms.find_by_id(2)
   end
 
   def aboutus

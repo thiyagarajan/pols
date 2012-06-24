@@ -1,4 +1,4 @@
 <div class="page-header">
-  <h1>Sites#help</h1>
+  <h1><%= @help.title unless @help.nil? %></h1>
 </div>
-<p>Find me in app/views/sites/help.html.erb</p>
+<p><%= @help.body unless @help.nil? %></p>

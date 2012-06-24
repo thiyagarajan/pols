@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Cms:
+  fields:
+    default: title, body
+    form: title, body
+  relationships: 
+  application: Application
